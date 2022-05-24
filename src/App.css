@@ -1,0 +1,89 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 0.8fr 10fr;
+  /* grid-gap: 10px; */
+
+}
+
+.header {
+  grid-area: h;
+  background-color: black;
+}
+
+.header img {
+  width: 50px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: rgb(191, 28, 98);
+}
+
+.content {
+  grid-area: c;
+  background-color: darkgray;
+  text-align: center;
+}
+
+.content .mainText {
+  font-size: x-large;
+  padding: 10px;
+  font-style: inherit;
+  font-weight: 900;
+}
+
+.content .hardware button {
+  width: 400px;
+  height: 395px;
+  margin: 5px;
+}
+
+.content .hardware #light {
+  background-image: url('./images/light.png');
+}
+
+.content .hardware #bronze {
+  background-image: url('./images/bronze.png');
+}
+
+.content .hardware #silver {
+  background-image: url('./images/silver.png');
+}
+
+.content .hardware #gold {
+  background-image: url('./images/gold.png');
+}
+
+.content .hardware #platinum {
+  background-image: url('./images/platinum.png');
+}
+
+.content .hardware button:focus,
+button:active {
+  border: rgb(19, 237, 19) 5px solid;
+}
+
+
+.content .os-slider img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.nav div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav div:hover {
+  background-color: black;
+}
