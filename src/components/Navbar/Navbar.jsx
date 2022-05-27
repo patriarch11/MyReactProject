@@ -1,9 +1,10 @@
 import React from "react";
+import s from './Navbar.module.css'
 
 const Nav = () => {
     return (
-        <nav className='nav'>
-            <div><a href='#'>Main 1</a></div>
+        <nav className={s.nav}>
+            <div><a href='#'>Main</a></div>
             <div><a href='#'>Order</a></div>
             <div><a href='#'>Bonus points</a></div>
             <div><a href='#'>Account settings</a></div>
