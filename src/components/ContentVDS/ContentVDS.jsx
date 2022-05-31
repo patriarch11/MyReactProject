@@ -5,7 +5,7 @@ import s from './ContentVDS.module.css'
 
 const ContentVDS = () => {
     return (
-        <div className={s.content}>
+        <div className={s.hwWrapper}>
             <div className={s.mainText}>Select hardware configuration and operating system</div>
             <Hardware />
             <OsSlider />

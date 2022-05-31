@@ -1,12 +1,10 @@
-.content {
-    grid-area: c;
-    background-color: darkgray;
-    text-align: center;
-}
 
 .mainText {
     font-size: x-large;
     padding: 10px;
     font-style: inherit;
     font-weight: 900;
+}
+.hwWrapper{
+    text-align: center;
 }

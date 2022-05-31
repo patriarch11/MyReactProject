@@ -1,0 +1,28 @@
+.orderWrapper {
+    display: grid;
+    grid-template-columns: 10fr 5fr;
+}
+
+.cc {
+    height: 650px;
+}
+
+.server {
+    height: 650px;
+}
+
+.cc button {
+    margin-left: 35%;
+    margin-top: 10%;
+    height: 70px;
+    width: 100px;
+    border-radius: 40%;
+    border: none;
+    background-color: rgb(196, 176, 126);
+}
+
+.cc button:active {
+    border: none;
+    background-color: rgb(0, 211, 144);
+    font-weight: bold;
+}

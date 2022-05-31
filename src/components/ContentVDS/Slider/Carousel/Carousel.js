@@ -1,7 +1,8 @@
+import React from "react";
 import "./Carousel.css"
 import { useState, useEffect, Children, cloneElement } from "react";
 
-const PAGE_WIDTH = 450
+const PAGE_WIDTH = 450;
 
 export const Carousel = ({ children }) => {
     const [pages, setPages] = useState([])
