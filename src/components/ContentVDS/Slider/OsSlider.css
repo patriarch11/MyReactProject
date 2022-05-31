@@ -1,0 +1,22 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.windows {
+    background-color: aqua;
+}
+
+.linux {
+    background-color: fuchsia;
+}
+
+.android {
+    background-color: greenyellow;
+}
+
+.macOs {
+    background-color: cadetblue;
+}

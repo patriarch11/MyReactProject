@@ -1,0 +1,45 @@
+.hardware button {
+    width: 400px;
+    height: 395px;
+    margin: 5px;
+}
+
+.light button {
+    background-image: url('./../../../images/light.png');
+}
+
+.bronze button {
+    background-image: url('./../../../images/bronze.png');
+}
+
+.silver button {
+    background-image: url('./../../../images/silver.png');
+}
+
+.gold button {
+    background-image: url('./../../../images/gold.png');
+}
+
+.platinum button {
+    background-image: url('./../../../images/platinum.png');
+}
+
+.hardware button,
+label {
+    display: block;
+}
+
+.hardware label {
+    color: rgb(216, 52, 123);
+    font-weight: 800;
+}
+
+.hardware button:focus,
+button:active {
+    border: rgb(19, 237, 19) 5px solid;
+    border-radius: 30px;
+}
+
+.hardware div {
+    display: inline-block;
+}

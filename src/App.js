@@ -3,6 +3,7 @@ import './App.css';
 import ContentVDS from './components/ContentVDS/ContentVDS';
 import Header from './components/Header/Header';
 import Nav from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Nav />
       <ContentVDS />
+      <Footer />
     </div>
   );
 }

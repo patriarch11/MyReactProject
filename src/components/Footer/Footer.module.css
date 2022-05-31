@@ -1,0 +1,24 @@
+.footer {
+    grid-area: f;
+    background-color: black;
+    color: white;
+}
+
+.footer div {
+    width: 200px;
+}
+
+.contacts {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer div:hover {
+    background-color: rgb(191, 28, 98);
+    border-radius: 30px;
+    text-align: center;
+}
