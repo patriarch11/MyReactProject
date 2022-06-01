@@ -1,0 +1,20 @@
+.settings {
+    height: 650px;
+    padding: 20px;
+    float: left;
+}
+
+.item {
+    clear: both;
+    text-align: right;
+    padding-block: 5px;
+
+}
+
+.item input {
+    margin-left: 20px;
+}
+
+label {
+    float: left;
+}

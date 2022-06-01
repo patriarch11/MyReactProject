@@ -9,6 +9,9 @@
 
 .server {
     height: 650px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    font-weight: bold;
 }
 
 .cc button {

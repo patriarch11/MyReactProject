@@ -5,9 +5,10 @@ import Header from './components/Header/Header';
 import Nav from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Order from './components/Order/Order';
-import Bonus from './components/BonusPoints/Bonus';
+import History from './components/ShoppingHistory/History';
 import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 
 function App(props) {
@@ -18,10 +19,10 @@ function App(props) {
         <Nav />
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path='/main' element={<ContentVDS />} />
-            <Route path='/order' element={<Order />} />
-            <Route path='/bonus' element={<Bonus />} />
-            <Route path='/accsettings' element={<Settings />} />
+            <Route exact path='/main' element={<ContentVDS />} />
+            <Route exact path='/order' element={<Order />} />
+            <Route exact path='/history' element={<History />} />
+            <Route exact path='/accsettings' element={<Settings />} />
           </Routes>
         </div>
         <Footer />
