@@ -1,12 +1,33 @@
 import React from "react";
 import CreditCard from "./PaymentWindow/CreditCard";
 import s from './Order.module.css';
+
+
+const SelectedHw = (props) => {
+    return (
+        <div>
+            {props.name}
+        </div>
+    )
+}
+
 const Order = (props) => {
+
+    let hardwareData = [
+        { id: 'light', name: 'Light', price: 15 },
+        { id: 'bronze', name: 'Bronze', price: 20 },
+        { id: 'silver', name: 'Silver', price: 30 },
+        { id: 'gold', name: 'Gold', price: 40 },
+        { id: 'platinum', name: 'Platinum', price: 50 }
+    ];
+
     return (
         <div className={s.orderWrapper}>
             <div className={s.server}>
-                <p>Selected hardware:{props.hw}</p>
-                <p>Selected OS:{props.osName}</p>
+                <p>Selected hardware:
+                    <SelectedHw name={hardwareData[0].name} />
+                </p>
+                <p>Selected OS:</p>
                 <p>Select rental period:
                     <select name="" id="">
                         <option value="1">1 month</option>
@@ -23,7 +44,7 @@ const Order = (props) => {
                         <option value="12">12 month</option>
                     </select>
                 </p>
-                <p>Total price: {props.price}</p>
+                <p>Total price: </p>
             </div>
             <div className={s.cc}>
                 <CreditCard />

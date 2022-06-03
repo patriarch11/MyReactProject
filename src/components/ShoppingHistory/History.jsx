@@ -7,10 +7,10 @@ import s from './History.module.css'
 const ActiveSubItem = (props) => {
 
     let path = '/history/' + props.id;
-    // let hwConfArray = ['Light', 'Bronze', 'Silver', 'Gold', 'Platinum'];
+
     return (
         <div className={s.actSubItem}>
-            <NavLink to={path}>props.hwName</NavLink>
+            <NavLink to={path}>{props.name}</NavLink>
         </div>
     );
 }
@@ -30,11 +30,19 @@ const HistorySubItem = (props) => {
 }
 
 const History = (props) => {
+    let hardwareData = [
+        { id: 'light', name: 'Light', price: 15 },
+        { id: 'bronze', name: 'Bronze', price: 20 },
+        { id: 'silver', name: 'Silver', price: 30 },
+        { id: 'gold', name: 'Gold', price: 40 },
+        { id: 'platinum', name: 'Platinum', price: 50 }
+    ];
     return (
         <div className={s.historyWrapper}>
             <div className={s.activeSub}>
-                <p>Active subscriptions:</p>
-
+                <p>Active subscriptions:
+                    <ActiveSubItem name={hardwareData[0].name} id={hardwareData[0].id}></ActiveSubItem>
+                </p>
             </div>
             <div className={s.paymentHis}>
                 <p>Payment history:</p>
